@@ -38,11 +38,15 @@ int main(int argc, const char * argv[]) {
                 
                
                 
-                NSArray *values = [cars valueForKeyPath: @"@unionOfArrays.@allValues"];
-                
-                for (int d=0; d<6; d++) {
-                    NSLog(@"This car is %@",[values objectAtIndex:d]);
-                }
+//                NSArray *values = [cars valueForKeyPath: @"@unionOfArrays.@allValues"];
+        
+        for (int d = 0; d < cars.count; d++) {
+            NSLog(@"%@ %@ %@", [cars[d] objectForKey:@"make"],[cars[d] objectForKey:@"year"],[cars[d] objectForKey:@"model"]);
+        }
+        
+//                for (int d=0; d<6; d++) {
+//                    NSLog(@"This car is %@",[values objectAtIndex:d]);
+//                }
         
     }
     return 0;
