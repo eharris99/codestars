@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>1DFFAFFB-3F73-439D-B807-B7BEA613067E</string>
+	<string>EE7486B2-1729-4829-9C14-13C6CC20213B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>othermethodqu2</string>
+	<string>bodymassindex</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
 		<string>https://github.com/eharris99/codestars.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>problemset_4/problem_two/othermethod/othermethodqu2/othermethodqu2.xcodeproj</string>
+	<string>problemset_4/bodymassindex/bodymassindex.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
-		<string>../../../../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/eharris99/codestars.git</string>
