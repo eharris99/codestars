@@ -1,0 +1,1 @@
+Medium blog post on IBActions and IBOutlet is [here](https://medium.com/@eliseharris99/iboutlets-and-ibactions-in-cocoa-touch-framework-ef03488a6653)
