@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9E38EE84-3D51-4FCC-9F4B-DBD4955848DD</string>
+	<string>1AC9EDAD-8B6A-4060-9922-D3DD97A4CC02</string>
 	<key>IDESourceControlProjectName</key>
-	<string>other_way_carlist</string>
+	<string>SimpleTable</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
 		<string>https://github.com/eharris99/codestars.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>problemset_4/problem_three/other_way_carlist/other_way_carlist/other_way_carlist.xcodeproj</string>
+	<string>problemset_4/ch1-3ofios8/SimpleTable/SimpleTable/SimpleTable.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
