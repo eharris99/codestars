@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2220F735-F5F7-4791-BDEF-C9CB8B915884</string>
+	<string>14365EC7-28E0-47D5-94D2-9137C491E2E1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>CustomTable</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
 		<string>https://github.com/eharris99/codestars.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>problemset_5/ch4,5,6codealong/CustomTable/CustomTable/CustomTable.xcodeproj</string>
+	<string>problemset_5/problem_one/bowiepersonae/bowiepersonae.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
-		<string>../../../../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/eharris99/codestars.git</string>
