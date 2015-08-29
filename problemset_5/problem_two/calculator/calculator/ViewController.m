@@ -15,8 +15,12 @@
 
 @implementation ViewController
 
-- (IBAction)digitPressed:(id)sender {
+
+
+
+- (IBAction)digitPressed:(UILabel*)sender {
     
+    NSString *stringByAppendingString;
     
 }
 

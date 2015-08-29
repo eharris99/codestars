@@ -1,0 +1,1 @@
+Link to Medium Blog Post on MVC is [here] (https://medium.com/@eliseharris99/the-model-view-controller-mvc-design-pattern-3c32c5eccbac)

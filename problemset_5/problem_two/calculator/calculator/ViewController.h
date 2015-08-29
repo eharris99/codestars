@@ -10,7 +10,15 @@
 
 @interface ViewController : UIViewController
 
+
+
 @property (weak, nonatomic) IBOutlet UILabel *display;
+
+-(IBAction)numberReader:(UIButton*)button;
+
+-(IBAction)clearButton:(UIButton*)clear;
+
+-(IBAction)functions:(UIButton *)functionInput;
 
 
 @end
