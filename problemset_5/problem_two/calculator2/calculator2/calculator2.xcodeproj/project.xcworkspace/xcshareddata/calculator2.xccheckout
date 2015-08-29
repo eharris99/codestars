@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>34EE9A02-991E-41CA-AE9F-2A9B0EBAC41B</string>
+	<string>D446A4D4-5CB1-4265-BA6A-AF30731A520D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>calculator</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
 		<string>https://github.com/eharris99/codestars.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>problemset_5/problem_two/calculator/calculator.xcodeproj</string>
+	<string>problemset_5/problem_two/calculator2/calculator2/calculator2.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
-		<string>../../../../..</string>
+		<string>../../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/eharris99/codestars.git</string>
