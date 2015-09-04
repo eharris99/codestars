@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D21CF3DD1B9A367600CAC7AD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF3DC1B9A367600CAC7AD /* DetailViewController.m */; };
+		D21CF3E01B9A49A000CAC7AD /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF3DF1B9A49A000CAC7AD /* AboutViewController.m */; };
+		D21CF3E71B9A4C1100CAC7AD /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D21CF3E51B9A4C1100CAC7AD /* about.jpg */; };
+		D21CF3E81B9A4C1100CAC7AD /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = D21CF3E61B9A4C1100CAC7AD /* about.html */; };
 		F4D504F019F8FB4B00BE11BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D504EF19F8FB4B00BE11BB /* main.m */; };
 		F4D504F319F8FB4B00BE11BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D504F219F8FB4B00BE11BB /* AppDelegate.m */; };
 		F4D504F919F8FB4B00BE11BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D504F719F8FB4B00BE11BB /* Main.storyboard */; };
@@ -31,6 +34,10 @@
 /* Begin PBXFileReference section */
 		D21CF3DB1B9A367600CAC7AD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D21CF3DC1B9A367600CAC7AD /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D21CF3DE1B9A49A000CAC7AD /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		D21CF3DF1B9A49A000CAC7AD /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		D21CF3E51B9A4C1100CAC7AD /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = about.jpg; path = "../../../../../../Downloads/book-tabbar-about/about.jpg"; sourceTree = "<group>"; };
+		D21CF3E61B9A4C1100CAC7AD /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = "../../../../../../Downloads/book-tabbar-about/about.html"; sourceTree = "<group>"; };
 		F4D504EA19F8FB4B00BE11BB /* CustomTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D504EE19F8FB4B00BE11BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4D504EF19F8FB4B00BE11BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +97,8 @@
 				F4D504F119F8FB4B00BE11BB /* AppDelegate.h */,
 				F4D504F219F8FB4B00BE11BB /* AppDelegate.m */,
 				F4D504F719F8FB4B00BE11BB /* Main.storyboard */,
+				D21CF3DE1B9A49A000CAC7AD /* AboutViewController.h */,
+				D21CF3DF1B9A49A000CAC7AD /* AboutViewController.m */,
 				D21CF3DB1B9A367600CAC7AD /* DetailViewController.h */,
 				D21CF3DC1B9A367600CAC7AD /* DetailViewController.m */,
 				F4D504FA19F8FB4B00BE11BB /* Images.xcassets */,
@@ -106,6 +115,8 @@
 		F4D504ED19F8FB4B00BE11BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D21CF3E51B9A4C1100CAC7AD /* about.jpg */,
+				D21CF3E61B9A4C1100CAC7AD /* about.html */,
 				F4D504EE19F8FB4B00BE11BB /* Info.plist */,
 				F4D504EF19F8FB4B00BE11BB /* main.m */,
 			);
@@ -212,6 +223,8 @@
 				F4D504F919F8FB4B00BE11BB /* Main.storyboard in Resources */,
 				F4D504FE19F8FB4B00BE11BB /* LaunchScreen.xib in Resources */,
 				F4D504FB19F8FB4B00BE11BB /* Images.xcassets in Resources */,
+				D21CF3E81B9A4C1100CAC7AD /* about.html in Resources */,
+				D21CF3E71B9A4C1100CAC7AD /* about.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21CF3E01B9A49A000CAC7AD /* AboutViewController.m in Sources */,
 				D21CF3DD1B9A367600CAC7AD /* DetailViewController.m in Sources */,
 				F4D504F319F8FB4B00BE11BB /* AppDelegate.m in Sources */,
 				F4D5051519F8FD9400BE11BB /* CustomTableViewController.m in Sources */,

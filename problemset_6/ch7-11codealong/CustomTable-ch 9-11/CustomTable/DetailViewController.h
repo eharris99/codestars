@@ -12,5 +12,8 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *recipeLabel;
 @property (nonatomic, strong) NSString *recipeName;
+@property (nonatomic, strong) IBOutlet UILabel *prepTimeLabel;
+@property (nonatomic, strong) NSString *prepTimeText;
+
 
 @end
