@@ -448,6 +448,7 @@
 				D21CF4171B9A695700CAC7AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D21CF4181B9A695700CAC7AD /* Build configuration list for PBXNativeTarget "RemKoolhaasTravelAppTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +457,7 @@
 				D21CF41A1B9A695700CAC7AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
