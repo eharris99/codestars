@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D21CF3F81B9A695600CAC7AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF3F71B9A695600CAC7AD /* main.m */; };
+		D21CF3FB1B9A695600CAC7AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF3FA1B9A695600CAC7AD /* AppDelegate.m */; };
+		D21CF4011B9A695600CAC7AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21CF3FF1B9A695600CAC7AD /* Main.storyboard */; };
+		D21CF4031B9A695600CAC7AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21CF4021B9A695600CAC7AD /* Images.xcassets */; };
+		D21CF4061B9A695600CAC7AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D21CF4041B9A695600CAC7AD /* LaunchScreen.xib */; };
+		D21CF4121B9A695700CAC7AD /* RemKoolhaasTravelAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF4111B9A695700CAC7AD /* RemKoolhaasTravelAppTests.m */; };
+		D21CF41D1B9A714600CAC7AD /* TravelAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF41C1B9A714600CAC7AD /* TravelAppViewController.m */; };
+		D21CF41F1B9A767400CAC7AD /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = D21CF41E1B9A767400CAC7AD /* about.html */; };
+		D21CF4211B9A767C00CAC7AD /* rem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D21CF4201B9A767C00CAC7AD /* rem.jpg */; };
+		D21CF4271B9A7D6200CAC7AD /* TravelAppViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF4261B9A7D6200CAC7AD /* TravelAppViewCell.m */; };
+		D21CF42A1B9A886100CAC7AD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF4291B9A886100CAC7AD /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D21CF40C1B9A695700CAC7AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D21CF3EA1B9A695600CAC7AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21CF3F11B9A695600CAC7AD;
+			remoteInfo = RemKoolhaasTravelApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D21CF3F21B9A695600CAC7AD /* RemKoolhaasTravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemKoolhaasTravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21CF3F61B9A695600CAC7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21CF3F71B9A695600CAC7AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D21CF3F91B9A695600CAC7AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D21CF3FA1B9A695600CAC7AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D21CF4001B9A695600CAC7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D21CF4021B9A695600CAC7AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D21CF4051B9A695600CAC7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D21CF40B1B9A695700CAC7AD /* RemKoolhaasTravelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemKoolhaasTravelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21CF4101B9A695700CAC7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21CF4111B9A695700CAC7AD /* RemKoolhaasTravelAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemKoolhaasTravelAppTests.m; sourceTree = "<group>"; };
+		D21CF41B1B9A714600CAC7AD /* TravelAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelAppViewController.h; sourceTree = "<group>"; };
+		D21CF41C1B9A714600CAC7AD /* TravelAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelAppViewController.m; sourceTree = "<group>"; };
+		D21CF41E1B9A767400CAC7AD /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = ../../../../../TravelApp/about.html; sourceTree = "<group>"; };
+		D21CF4201B9A767C00CAC7AD /* rem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rem.jpg; path = ../../../../../TravelApp/rem.jpg; sourceTree = "<group>"; };
+		D21CF4251B9A7D6200CAC7AD /* TravelAppViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TravelAppViewCell.h; path = ../TravelAppViewCell.h; sourceTree = "<group>"; };
+		D21CF4261B9A7D6200CAC7AD /* TravelAppViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TravelAppViewCell.m; path = ../TravelAppViewCell.m; sourceTree = "<group>"; };
+		D21CF4281B9A886100CAC7AD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D21CF4291B9A886100CAC7AD /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D21CF3EF1B9A695600CAC7AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21CF4081B9A695700CAC7AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D21CF3E91B9A695600CAC7AD = {
+			isa = PBXGroup;
+			children = (
+				D21CF3F41B9A695600CAC7AD /* RemKoolhaasTravelApp */,
+				D21CF40E1B9A695700CAC7AD /* RemKoolhaasTravelAppTests */,
+				D21CF3F31B9A695600CAC7AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D21CF3F31B9A695600CAC7AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D21CF3F21B9A695600CAC7AD /* RemKoolhaasTravelApp.app */,
+				D21CF40B1B9A695700CAC7AD /* RemKoolhaasTravelAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D21CF3F41B9A695600CAC7AD /* RemKoolhaasTravelApp */ = {
+			isa = PBXGroup;
+			children = (
+				D21CF3F91B9A695600CAC7AD /* AppDelegate.h */,
+				D21CF3FA1B9A695600CAC7AD /* AppDelegate.m */,
+				D21CF3FF1B9A695600CAC7AD /* Main.storyboard */,
+				D21CF4281B9A886100CAC7AD /* DetailViewController.h */,
+				D21CF4291B9A886100CAC7AD /* DetailViewController.m */,
+				D21CF4021B9A695600CAC7AD /* Images.xcassets */,
+				D21CF4041B9A695600CAC7AD /* LaunchScreen.xib */,
+				D21CF4251B9A7D6200CAC7AD /* TravelAppViewCell.h */,
+				D21CF4261B9A7D6200CAC7AD /* TravelAppViewCell.m */,
+				D21CF3F51B9A695600CAC7AD /* Supporting Files */,
+				D21CF41B1B9A714600CAC7AD /* TravelAppViewController.h */,
+				D21CF41C1B9A714600CAC7AD /* TravelAppViewController.m */,
+			);
+			path = RemKoolhaasTravelApp;
+			sourceTree = "<group>";
+		};
+		D21CF3F51B9A695600CAC7AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D21CF41E1B9A767400CAC7AD /* about.html */,
+				D21CF3F61B9A695600CAC7AD /* Info.plist */,
+				D21CF4201B9A767C00CAC7AD /* rem.jpg */,
+				D21CF3F71B9A695600CAC7AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D21CF40E1B9A695700CAC7AD /* RemKoolhaasTravelAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D21CF4111B9A695700CAC7AD /* RemKoolhaasTravelAppTests.m */,
+				D21CF40F1B9A695700CAC7AD /* Supporting Files */,
+			);
+			path = RemKoolhaasTravelAppTests;
+			sourceTree = "<group>";
+		};
+		D21CF40F1B9A695700CAC7AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D21CF4101B9A695700CAC7AD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D21CF3F11B9A695600CAC7AD /* RemKoolhaasTravelApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D21CF4151B9A695700CAC7AD /* Build configuration list for PBXNativeTarget "RemKoolhaasTravelApp" */;
+			buildPhases = (
+				D21CF3EE1B9A695600CAC7AD /* Sources */,
+				D21CF3EF1B9A695600CAC7AD /* Frameworks */,
+				D21CF3F01B9A695600CAC7AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemKoolhaasTravelApp;
+			productName = RemKoolhaasTravelApp;
+			productReference = D21CF3F21B9A695600CAC7AD /* RemKoolhaasTravelApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D21CF40A1B9A695700CAC7AD /* RemKoolhaasTravelAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D21CF4181B9A695700CAC7AD /* Build configuration list for PBXNativeTarget "RemKoolhaasTravelAppTests" */;
+			buildPhases = (
+				D21CF4071B9A695700CAC7AD /* Sources */,
+				D21CF4081B9A695700CAC7AD /* Frameworks */,
+				D21CF4091B9A695700CAC7AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D21CF40D1B9A695700CAC7AD /* PBXTargetDependency */,
+			);
+			name = RemKoolhaasTravelAppTests;
+			productName = RemKoolhaasTravelAppTests;
+			productReference = D21CF40B1B9A695700CAC7AD /* RemKoolhaasTravelAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D21CF3EA1B9A695600CAC7AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ech;
+				TargetAttributes = {
+					D21CF3F11B9A695600CAC7AD = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D21CF40A1B9A695700CAC7AD = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D21CF3F11B9A695600CAC7AD;
+					};
+				};
+			};
+			buildConfigurationList = D21CF3ED1B9A695600CAC7AD /* Build configuration list for PBXProject "RemKoolhaasTravelApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D21CF3E91B9A695600CAC7AD;
+			productRefGroup = D21CF3F31B9A695600CAC7AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D21CF3F11B9A695600CAC7AD /* RemKoolhaasTravelApp */,
+				D21CF40A1B9A695700CAC7AD /* RemKoolhaasTravelAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D21CF3F01B9A695600CAC7AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21CF41F1B9A767400CAC7AD /* about.html in Resources */,
+				D21CF4011B9A695600CAC7AD /* Main.storyboard in Resources */,
+				D21CF4061B9A695600CAC7AD /* LaunchScreen.xib in Resources */,
+				D21CF4031B9A695600CAC7AD /* Images.xcassets in Resources */,
+				D21CF4211B9A767C00CAC7AD /* rem.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21CF4091B9A695700CAC7AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D21CF3EE1B9A695600CAC7AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21CF42A1B9A886100CAC7AD /* DetailViewController.m in Sources */,
+				D21CF4271B9A7D6200CAC7AD /* TravelAppViewCell.m in Sources */,
+				D21CF3FB1B9A695600CAC7AD /* AppDelegate.m in Sources */,
+				D21CF41D1B9A714600CAC7AD /* TravelAppViewController.m in Sources */,
+				D21CF3F81B9A695600CAC7AD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21CF4071B9A695700CAC7AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21CF4121B9A695700CAC7AD /* RemKoolhaasTravelAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D21CF40D1B9A695700CAC7AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D21CF3F11B9A695600CAC7AD /* RemKoolhaasTravelApp */;
+			targetProxy = D21CF40C1B9A695700CAC7AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D21CF3FF1B9A695600CAC7AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D21CF4001B9A695600CAC7AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D21CF4041B9A695600CAC7AD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D21CF4051B9A695600CAC7AD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D21CF4131B9A695700CAC7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D21CF4141B9A695700CAC7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D21CF4161B9A695700CAC7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RemKoolhaasTravelApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D21CF4171B9A695700CAC7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RemKoolhaasTravelApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D21CF4191B9A695700CAC7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RemKoolhaasTravelAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemKoolhaasTravelApp.app/RemKoolhaasTravelApp";
+			};
+			name = Debug;
+		};
+		D21CF41A1B9A695700CAC7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RemKoolhaasTravelAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemKoolhaasTravelApp.app/RemKoolhaasTravelApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D21CF3ED1B9A695600CAC7AD /* Build configuration list for PBXProject "RemKoolhaasTravelApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21CF4131B9A695700CAC7AD /* Debug */,
+				D21CF4141B9A695700CAC7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D21CF4151B9A695700CAC7AD /* Build configuration list for PBXNativeTarget "RemKoolhaasTravelApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21CF4161B9A695700CAC7AD /* Debug */,
+				D21CF4171B9A695700CAC7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D21CF4181B9A695700CAC7AD /* Build configuration list for PBXNativeTarget "RemKoolhaasTravelAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21CF4191B9A695700CAC7AD /* Debug */,
+				D21CF41A1B9A695700CAC7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D21CF3EA1B9A695600CAC7AD /* Project object */;
+}

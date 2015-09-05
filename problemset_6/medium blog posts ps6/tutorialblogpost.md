@@ -1,1 +1,1 @@
-Medium blog post: tutorial on travelapp here 
+Medium blog post: tutorial on travelapp [here] (https://medium.com/@eliseharris99/how-to-make-a-travelapp-in-xcode-1dbebee007bf)
