@@ -1,0 +1,1 @@
+Medium blog post on Navigation and Tab Bar controllers and their data structures is [here](https://medium.com/@eliseharris99/navigation-and-tab-bar-controllers-in-xcode-and-their-data-structures-e023aa019f5e)
