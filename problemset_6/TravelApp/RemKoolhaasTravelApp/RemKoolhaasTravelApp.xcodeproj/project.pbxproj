@@ -18,6 +18,8 @@
 		D21CF4211B9A767C00CAC7AD /* rem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D21CF4201B9A767C00CAC7AD /* rem.jpg */; };
 		D21CF4271B9A7D6200CAC7AD /* TravelAppViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF4261B9A7D6200CAC7AD /* TravelAppViewCell.m */; };
 		D21CF42A1B9A886100CAC7AD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF4291B9A886100CAC7AD /* DetailViewController.m */; };
+		D21CF42D1B9AA3AB00CAC7AD /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF42C1B9AA3AB00CAC7AD /* AboutViewController.m */; };
+		D21CF4301B9AA87300CAC7AD /* BioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CF42F1B9AA87300CAC7AD /* BioViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		D21CF4261B9A7D6200CAC7AD /* TravelAppViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TravelAppViewCell.m; path = ../TravelAppViewCell.m; sourceTree = "<group>"; };
 		D21CF4281B9A886100CAC7AD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D21CF4291B9A886100CAC7AD /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D21CF42B1B9AA3AB00CAC7AD /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		D21CF42C1B9AA3AB00CAC7AD /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		D21CF42E1B9AA87300CAC7AD /* BioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BioViewController.h; sourceTree = "<group>"; };
+		D21CF42F1B9AA87300CAC7AD /* BioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BioViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				D21CF3F91B9A695600CAC7AD /* AppDelegate.h */,
 				D21CF3FA1B9A695600CAC7AD /* AppDelegate.m */,
 				D21CF3FF1B9A695600CAC7AD /* Main.storyboard */,
+				D21CF42E1B9AA87300CAC7AD /* BioViewController.h */,
+				D21CF42F1B9AA87300CAC7AD /* BioViewController.m */,
+				D21CF42B1B9AA3AB00CAC7AD /* AboutViewController.h */,
+				D21CF42C1B9AA3AB00CAC7AD /* AboutViewController.m */,
 				D21CF4281B9A886100CAC7AD /* DetailViewController.h */,
 				D21CF4291B9A886100CAC7AD /* DetailViewController.m */,
 				D21CF4021B9A695600CAC7AD /* Images.xcassets */,
@@ -237,9 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21CF42D1B9AA3AB00CAC7AD /* AboutViewController.m in Sources */,
 				D21CF42A1B9A886100CAC7AD /* DetailViewController.m in Sources */,
 				D21CF4271B9A7D6200CAC7AD /* TravelAppViewCell.m in Sources */,
 				D21CF3FB1B9A695600CAC7AD /* AppDelegate.m in Sources */,
+				D21CF4301B9AA87300CAC7AD /* BioViewController.m in Sources */,
 				D21CF41D1B9A714600CAC7AD /* TravelAppViewController.m in Sources */,
 				D21CF3F81B9A695600CAC7AD /* main.m in Sources */,
 			);
