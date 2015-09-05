@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>8B2EB802-1CDA-4975-91F6-741C554677D3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>RemKoolhaasTravelApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
 		<string>https://github.com/eharris99/codestars.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>problemset_6/TravelApp/RemKoolhaasTravelApp/RemKoolhaasTravelApp.xcodeproj/project.xcworkspace</string>
+	<string>problemset_6/TravelApp/RemKoolhaasTravelApp/RemKoolhaasTravelApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>

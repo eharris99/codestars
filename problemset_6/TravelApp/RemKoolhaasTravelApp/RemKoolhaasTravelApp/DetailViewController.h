@@ -15,7 +15,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *buildingLabel;
 @property (nonatomic, strong) NSString *buildingName;
 @property (nonatomic, strong) IBOutlet UIImageView* buildingPic;
-@property (nonatomic, strong) UIImage* buildingImage;
+@property (nonatomic, strong) NSString* buildingImage;
 @property (nonatomic, strong) IBOutlet UITextView *buildingDetailSpace;
 @property (nonatomic, strong) NSString *buildingDetailDescription;
 
