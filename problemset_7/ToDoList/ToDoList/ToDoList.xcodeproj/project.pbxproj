@@ -15,6 +15,7 @@
 		D230D2551BA3D6EB005EB4FC /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D230D2541BA3D6EB005EB4FC /* ToDoListTests.m */; };
 		D24B955A1BA75A9D00D67955 /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24B95591BA75A9D00D67955 /* AddToDoItemViewController.m */; };
 		D24B955D1BA75BB500D67955 /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24B955C1BA75BB500D67955 /* ToDoListTableViewController.m */; };
+		D24B95601BA75F1600D67955 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D24B955F1BA75F1600D67955 /* ToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +40,12 @@
 		D230D24E1BA3D6EB005EB4FC /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D230D2531BA3D6EB005EB4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D230D2541BA3D6EB005EB4FC /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
-		D24B95581BA75A9D00D67955 /* AddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoItemViewController.h; sourceTree = "<group>"; };
-		D24B95591BA75A9D00D67955 /* AddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoItemViewController.m; sourceTree = "<group>"; };
+		D24B95581BA75A9D00D67955 /* AddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddToDoItemViewController.h; path = ../AddToDoItemViewController.h; sourceTree = "<group>"; };
+		D24B95591BA75A9D00D67955 /* AddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddToDoItemViewController.m; path = ../AddToDoItemViewController.m; sourceTree = "<group>"; };
 		D24B955B1BA75BB500D67955 /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
 		D24B955C1BA75BB500D67955 /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
+		D24B955E1BA75F1600D67955 /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
+		D24B955F1BA75F1600D67955 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +69,6 @@
 		D230D22C1BA3D6EB005EB4FC = {
 			isa = PBXGroup;
 			children = (
-				D24B95581BA75A9D00D67955 /* AddToDoItemViewController.h */,
-				D24B95591BA75A9D00D67955 /* AddToDoItemViewController.m */,
 				D230D2371BA3D6EB005EB4FC /* ToDoList */,
 				D230D2511BA3D6EB005EB4FC /* ToDoListTests */,
 				D230D2361BA3D6EB005EB4FC /* Products */,
@@ -86,6 +87,10 @@
 		D230D2371BA3D6EB005EB4FC /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				D24B955E1BA75F1600D67955 /* ToDoItem.h */,
+				D24B955F1BA75F1600D67955 /* ToDoItem.m */,
+				D24B95581BA75A9D00D67955 /* AddToDoItemViewController.h */,
+				D24B95591BA75A9D00D67955 /* AddToDoItemViewController.m */,
 				D230D23C1BA3D6EB005EB4FC /* AppDelegate.h */,
 				D230D23D1BA3D6EB005EB4FC /* AppDelegate.m */,
 				D230D2421BA3D6EB005EB4FC /* Main.storyboard */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D230D23E1BA3D6EB005EB4FC /* AppDelegate.m in Sources */,
+				D24B95601BA75F1600D67955 /* ToDoItem.m in Sources */,
 				D24B955D1BA75BB500D67955 /* ToDoListTableViewController.m in Sources */,
 				D230D23B1BA3D6EB005EB4FC /* main.m in Sources */,
 				D24B955A1BA75A9D00D67955 /* AddToDoItemViewController.m in Sources */,
