@@ -37,14 +37,14 @@
                     <navigationItem key="navigationItem" title="To-Do List" id="6EI-b6-6D5">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yee-TE-58x">
                             <connections>
-                                <segue destination="q2G-Mm-G6o" kind="modal" id="Fug-YW-xNn"/>
+                                <segue destination="q2G-Mm-G6o" kind="modal" id="Bj6-8B-eUQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEV-ky-afj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="269"/>
+            <point key="canvasLocation" x="217" y="313"/>
         </scene>
         <!--Add To-Do Item-->
         <scene sceneID="ufC-wZ-h7g">
@@ -90,13 +90,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="saveButton" destination="hLU-MS-5Ea" id="vp3-fY-hai"/>
-                        <outlet property="textField" destination="BI0-jB-vfm" id="Lgh-KT-L5q"/>
+                        <outlet property="textField" destination="Fnz-2d-Jgh" id="Ot4-aG-04U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <exit id="xmc-yN-5FG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="274"/>
+            <point key="canvasLocation" x="1024" y="326"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BgF-dS-8te">
@@ -121,6 +121,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q2G-Mm-G6o" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="mzG-c3-8Xa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TNT-fq-IVq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -132,7 +133,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4R-it-LA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="274"/>
+            <point key="canvasLocation" x="620" y="326"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
