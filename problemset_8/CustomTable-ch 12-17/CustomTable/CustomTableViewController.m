@@ -219,7 +219,7 @@ recipes = [NSArray arrayWithObjects:recipe1, recipe2, recipe3, recipe4, recipe5,
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         DetailViewController *destViewController = segue.destinationViewController;
         Recipe *recipe = [recipes objectAtIndex:indexPath.row];
-        destViewController.recipeName = recipe.name;
+        destViewController.recipe = recipe;
     }
 }
 
