@@ -17,6 +17,7 @@
 		D202A2071BACB16900084C52 /* RecipeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D202A2061BACB16900084C52 /* RecipeCollectionViewCell.m */; };
 		D202A20A1BACB3B800084C52 /* RecipeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D202A2091BACB3B800084C52 /* RecipeCollectionViewController.m */; };
 		D202A20D1BACC3CF00084C52 /* RecipeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D202A20C1BACC3CF00084C52 /* RecipeCollectionHeaderView.m */; };
+		D202A2101BACCB8B00084C52 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D202A20F1BACCB8B00084C52 /* RecipeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		D202A2091BACB3B800084C52 /* RecipeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeCollectionViewController.m; sourceTree = "<group>"; };
 		D202A20B1BACC3CF00084C52 /* RecipeCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeCollectionHeaderView.h; sourceTree = "<group>"; };
 		D202A20C1BACC3CF00084C52 /* RecipeCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeCollectionHeaderView.m; sourceTree = "<group>"; };
+		D202A20E1BACCB8B00084C52 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		D202A20F1BACCB8B00084C52 /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				D202A1E61BACAEC700084C52 /* ViewController.h */,
 				D202A1E71BACAEC700084C52 /* ViewController.m */,
 				D202A1E91BACAEC700084C52 /* Main.storyboard */,
+				D202A20E1BACCB8B00084C52 /* RecipeViewController.h */,
+				D202A20F1BACCB8B00084C52 /* RecipeViewController.m */,
 				D202A20B1BACC3CF00084C52 /* RecipeCollectionHeaderView.h */,
 				D202A20C1BACC3CF00084C52 /* RecipeCollectionHeaderView.m */,
 				D202A1EC1BACAEC700084C52 /* Images.xcassets */,
@@ -239,6 +244,7 @@
 				D202A20A1BACB3B800084C52 /* RecipeCollectionViewController.m in Sources */,
 				D202A1E81BACAEC700084C52 /* ViewController.m in Sources */,
 				D202A1E51BACAEC700084C52 /* AppDelegate.m in Sources */,
+				D202A2101BACCB8B00084C52 /* RecipeViewController.m in Sources */,
 				D202A1E21BACAEC700084C52 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

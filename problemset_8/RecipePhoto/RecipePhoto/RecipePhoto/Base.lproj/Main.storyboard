@@ -33,6 +33,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="recipeImageView" destination="iRX-64-UQt" id="bGO-s9-MiW"/>
+                                    <segue destination="jj4-k7-Iib" kind="modal" identifier="showRecipePhoto" id="Wff-hi-faz"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -71,11 +72,53 @@
                             <outlet property="delegate" destination="B4T-9E-clk" id="yJO-Md-TEH"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Recipe Photo" id="0Ko-3e-oro"/>
+                    <navigationItem key="navigationItem" title="Recipe Photo" id="0Ko-3e-oro">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="a5r-bu-IId">
+                            <connections>
+                                <action selector="shareButtonTapped:" destination="B4T-9E-clk" id="fxu-jQ-lSG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="shareButton" destination="a5r-bu-IId" id="as4-Oo-9HZ"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5UF-Ei-660" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="469" y="376"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="b8M-lg-DKE">
+            <objects>
+                <viewController id="aNz-25-22d" customClass="RecipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qi1-TG-M0C"/>
+                        <viewControllerLayoutGuide type="bottom" id="qvL-f8-duR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tbg-LL-P6C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qg5-4s-mhX">
+                                <rect key="frame" x="-16" y="-43" width="320" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photo" id="XWy-Ek-rOV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="kFk-fa-0DX">
+                            <connections>
+                                <action selector="close:" destination="aNz-25-22d" id="qR7-OE-VaJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="recipeImageView" destination="Qg5-4s-mhX" id="V4F-Sh-Eiv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Cb-Oy-zUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="351"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nk0-lX-Fn7">
@@ -94,6 +137,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LoV-zi-6mv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="125" y="390"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qXr-2M-MeI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jj4-k7-Iib" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="51m-fg-KYy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aNz-25-22d" kind="relationship" relationship="rootViewController" id="I1U-IB-PuL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIj-8v-qFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="351"/>
         </scene>
     </scenes>
     <resources>
