@@ -14,24 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D202A1DB1BACAEC700084C52"
-               BuildableName = "RecipePhoto.app"
-               BlueprintName = "RecipePhoto"
-               ReferencedContainer = "container:RecipePhoto.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D202A1F41BACAEC700084C52"
-               BuildableName = "RecipePhotoTests.xctest"
-               BlueprintName = "RecipePhotoTests"
-               ReferencedContainer = "container:RecipePhoto.xcodeproj">
+               BlueprintIdentifier = "D26B540F1BAF5EED00C411F2"
+               BuildableName = "rm3.app"
+               BlueprintName = "rm3"
+               ReferencedContainer = "container:rm3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D202A1F41BACAEC700084C52"
-               BuildableName = "RecipePhotoTests.xctest"
-               BlueprintName = "RecipePhotoTests"
-               ReferencedContainer = "container:RecipePhoto.xcodeproj">
+               BlueprintIdentifier = "D26B54281BAF5EED00C411F2"
+               BuildableName = "rm3Tests.xctest"
+               BlueprintName = "rm3Tests"
+               ReferencedContainer = "container:rm3.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D26B54331BAF5EED00C411F2"
+               BuildableName = "rm3UITests.xctest"
+               BlueprintName = "rm3UITests"
+               ReferencedContainer = "container:rm3.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D202A1DB1BACAEC700084C52"
-            BuildableName = "RecipePhoto.app"
-            BlueprintName = "RecipePhoto"
-            ReferencedContainer = "container:RecipePhoto.xcodeproj">
+            BlueprintIdentifier = "D26B540F1BAF5EED00C411F2"
+            BuildableName = "rm3.app"
+            BlueprintName = "rm3"
+            ReferencedContainer = "container:rm3.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -79,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D202A1DB1BACAEC700084C52"
-            BuildableName = "RecipePhoto.app"
-            BlueprintName = "RecipePhoto"
-            ReferencedContainer = "container:RecipePhoto.xcodeproj">
+            BlueprintIdentifier = "D26B540F1BAF5EED00C411F2"
+            BuildableName = "rm3.app"
+            BlueprintName = "rm3"
+            ReferencedContainer = "container:rm3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -98,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D202A1DB1BACAEC700084C52"
-            BuildableName = "RecipePhoto.app"
-            BlueprintName = "RecipePhoto"
-            ReferencedContainer = "container:RecipePhoto.xcodeproj">
+            BlueprintIdentifier = "D26B540F1BAF5EED00C411F2"
+            BuildableName = "rm3.app"
+            BlueprintName = "rm3"
+            ReferencedContainer = "container:rm3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
