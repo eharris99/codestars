@@ -10,7 +10,8 @@
 
 @interface RecipeViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *recipeImageName;
+- (IBAction)close:(id)sender;
+@property (weak,nonatomic) NSString *recipeImageName;
 
 
 @end

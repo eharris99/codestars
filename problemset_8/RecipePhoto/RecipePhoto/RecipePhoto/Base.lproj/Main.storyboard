@@ -101,7 +101,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qg5-4s-mhX">
-                                <rect key="frame" x="-16" y="-43" width="320" height="200"/>
+                                <rect key="frame" x="-20" y="-43" width="320" height="200"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -109,18 +109,18 @@
                     <navigationItem key="navigationItem" title="Photo" id="XWy-Ek-rOV">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="kFk-fa-0DX">
                             <connections>
-                                <action selector="close:" destination="aNz-25-22d" id="qR7-OE-VaJ"/>
+                                <action selector="close:" destination="aNz-25-22d" id="coL-C4-ljt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="recipeImageName" destination="kFk-fa-0DX" id="ZUa-pa-0S8"/>
-                        <outlet property="recipeImageView" destination="Qg5-4s-mhX" id="V4F-Sh-Eiv"/>
+                        <outlet property="recipeImageView" destination="Qg5-4s-mhX" id="eZv-ua-ccg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Cb-Oy-zUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1477" y="361"/>
+            <point key="canvasLocation" x="1478" y="414"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nk0-lX-Fn7">

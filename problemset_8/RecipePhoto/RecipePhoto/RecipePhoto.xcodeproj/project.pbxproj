@@ -106,9 +106,9 @@
 				D202A1EE1BACAEC700084C52 /* LaunchScreen.xib */,
 				D202A1DF1BACAEC700084C52 /* Supporting Files */,
 				D202A2051BACB16900084C52 /* RecipeCollectionViewCell.h */,
+				D202A2061BACB16900084C52 /* RecipeCollectionViewCell.m */,
 				D202A2081BACB3B800084C52 /* RecipeCollectionViewController.h */,
 				D202A2091BACB3B800084C52 /* RecipeCollectionViewController.m */,
-				D202A2061BACB16900084C52 /* RecipeCollectionViewCell.m */,
 			);
 			path = RecipePhoto;
 			sourceTree = "<group>";
