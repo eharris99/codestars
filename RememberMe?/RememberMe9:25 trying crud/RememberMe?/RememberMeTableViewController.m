@@ -177,4 +177,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
                      withRowAnimation:UITableViewRowAnimationNone];
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:
+(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.questions removeObjectAtIndex:indexPath.row];
+    [tableView reloadData];
+}
+
 @end
