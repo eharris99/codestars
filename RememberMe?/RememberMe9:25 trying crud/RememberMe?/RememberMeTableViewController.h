@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RememberMeTableViewController : UITableViewController<UISearchResultsUpdating>
+@interface RememberMeTableViewController : UITableViewController
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue;
 

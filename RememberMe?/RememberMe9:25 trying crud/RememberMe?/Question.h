@@ -10,7 +10,7 @@
 
 @interface Question : NSObject
 
-@property NSString *questionName;
+@property NSString *name;
 @property BOOL completed;
 @property (readonly) NSDate *creationDate;
 

@@ -38,7 +38,7 @@
     if (sender != self.saveButton) return;
     if (self.textField.text.length > 0) {
         self.question = [[Question alloc] init];
-        self.question.questionName = self.textField.text;
+        self.question.name = self.textField.text;
         self.question.completed = NO;
     }
 }

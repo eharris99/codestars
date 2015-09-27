@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2038B181BB6521900969FB0 /* QuestionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2038B171BB6521900969FB0 /* QuestionTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		D219F56E1BB5EF8D00C43CDB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D219F56D1BB5EF8D00C43CDB /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D22291301BADE06600656293 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = D222912F1BADE06600656293 /* about.html */; };
 		D22291331BADE0D100656293 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22291321BADE0D100656293 /* AboutViewController.m */; };
@@ -15,6 +16,8 @@
 		D243BAAD1BADB3E50036DFF9 /* FamilyPhotosCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D243BAAC1BADB3E50036DFF9 /* FamilyPhotosCollectionViewCell.m */; };
 		D29F3A801BB6125500A2B96E /* AddQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F3A7F1BB6125500A2B96E /* AddQuestionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D29F3A811BB61FCF00A2B96E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EAB7D31BAE02A0000AE9AD /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		D2D6E67A1BB7AC9B004D71D2 /* KardashiansCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6E6791BB7AC9B004D71D2 /* KardashiansCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D2D6E67D1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6E67C1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		D2EAB7D21BADFC5A000AE9AD /* alzheimers-large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2EAB7D11BADFC5A000AE9AD /* alzheimers-large.jpg */; };
 		D2F405391BACDF1E00DE4181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F405381BACDF1E00DE4181 /* main.m */; };
 		D2F4053C1BACDF1E00DE4181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F4053B1BACDF1E00DE4181 /* AppDelegate.m */; };
@@ -35,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2038B161BB6521900969FB0 /* QuestionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionTableViewCell.h; sourceTree = "<group>"; };
+		D2038B171BB6521900969FB0 /* QuestionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTableViewCell.m; sourceTree = "<group>"; };
 		D219F56C1BB5EF8D00C43CDB /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D219F56D1BB5EF8D00C43CDB /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		D222912F1BADE06600656293 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		D222912F1BADE06600656293 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; tabWidth = 4; };
 		D22291311BADE0D100656293 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		D22291321BADE0D100656293 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		D22291341BADF13000656293 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
@@ -48,6 +53,10 @@
 		D243BAAC1BADB3E50036DFF9 /* FamilyPhotosCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyPhotosCollectionViewCell.m; sourceTree = "<group>"; };
 		D29F3A7E1BB6125500A2B96E /* AddQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddQuestionViewController.h; sourceTree = "<group>"; };
 		D29F3A7F1BB6125500A2B96E /* AddQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddQuestionViewController.m; sourceTree = "<group>"; };
+		D2D6E6781BB7AC9B004D71D2 /* KardashiansCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KardashiansCollectionViewController.h; sourceTree = "<group>"; };
+		D2D6E6791BB7AC9B004D71D2 /* KardashiansCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KardashiansCollectionViewController.m; sourceTree = "<group>"; };
+		D2D6E67B1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KardashiansCollectionViewCell.h; sourceTree = "<group>"; };
+		D2D6E67C1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KardashiansCollectionViewCell.m; sourceTree = "<group>"; };
 		D2EAB7D11BADFC5A000AE9AD /* alzheimers-large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "alzheimers-large.jpg"; sourceTree = "<group>"; };
 		D2EAB7D31BAE02A0000AE9AD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D2F405331BACDF1E00DE4181 /* RememberMe?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RememberMe?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +132,12 @@
 				D219F56D1BB5EF8D00C43CDB /* DetailViewController.m */,
 				D29F3A7E1BB6125500A2B96E /* AddQuestionViewController.h */,
 				D29F3A7F1BB6125500A2B96E /* AddQuestionViewController.m */,
+				D2038B161BB6521900969FB0 /* QuestionTableViewCell.h */,
+				D2038B171BB6521900969FB0 /* QuestionTableViewCell.m */,
+				D2D6E6781BB7AC9B004D71D2 /* KardashiansCollectionViewController.h */,
+				D2D6E6791BB7AC9B004D71D2 /* KardashiansCollectionViewController.m */,
+				D2D6E67B1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.h */,
+				D2D6E67C1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.m */,
 			);
 			path = "RememberMe?";
 			sourceTree = "<group>";
@@ -258,12 +273,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D243BAAD1BADB3E50036DFF9 /* FamilyPhotosCollectionViewCell.m in Sources */,
+				D2038B181BB6521900969FB0 /* QuestionTableViewCell.m in Sources */,
+				D2D6E67D1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.m in Sources */,
 				D243BAAA1BADB1F00036DFF9 /* PhotosCollectionViewController.m in Sources */,
 				D22291331BADE0D100656293 /* AboutViewController.m in Sources */,
 				D29F3A801BB6125500A2B96E /* AddQuestionViewController.m in Sources */,
 				D219F56E1BB5EF8D00C43CDB /* DetailViewController.m in Sources */,
 				D2F4053C1BACDF1E00DE4181 /* AppDelegate.m in Sources */,
 				D2F405391BACDF1E00DE4181 /* main.m in Sources */,
+				D2D6E67A1BB7AC9B004D71D2 /* KardashiansCollectionViewController.m in Sources */,
 				D22291361BADF13000656293 /* Question.m in Sources */,
 				D2F405641BACE6FC00DE4181 /* RememberMeTableViewController.m in Sources */,
 			);

@@ -10,6 +10,7 @@
 #import "PhotosCollectionViewController.h"
 #import "Question.h"
 #import "AddQuestionViewController.h"
+#import "QuestionTableViewCell.h"
 
 @interface RememberMeTableViewController ()
 
@@ -27,13 +28,13 @@
 
 - (void)loadInitialData {
     Question *question1 = [[Question alloc] init];
-    question1.questionName = @"What is your sign?";
+    question1.name = @"What is your sign?";
     [self.questions addObject:question1];
     Question *question2 = [[Question alloc] init];
-    question2.questionName = @"Who is your hairdresser?";
+    question2.name = @"Who is your hairdresser?";
     [self.questions addObject:question2];
     Question *question3 = [[Question alloc] init];
-    question3.questionName = @"How many homes do you own?";
+    question3.name = @"How many homes do you own?";
     [self.questions addObject:question3];
 }
 
@@ -51,6 +52,7 @@
 //    [searchController.searchBar sizeToFit];
 //    self.tableView.tableHeaderView  = searchController.searchBar;
 //    self.definesPresentationContext = YES;
+//    
 //    searchController.searchResultsUpdater = self;
 //    searchController.dimsBackgroundDuringPresentation = NO;
     
@@ -72,13 +74,13 @@
 }
 
 //- (void)filterContentForSearchText:(NSString *)searchText {
-//    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"question contains[c]%@", searchText];
+//    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"(question contains[cd] %@) ) OR (question contains[cd] %@)", searchText];
 //    searchResults = [self.questions filteredArrayUsingPredicate:resultPredicate];
 //}
 //
 //- (void) updateSearchResultsForSearchController:(UISearchController *)searchController {
 //    [self filterContentForSearchText:searchController.searchBar.text];
-//    
+//    [self.tableView reloadData];
 //}
 
 - (void)didReceiveMemoryWarning {
@@ -89,37 +91,46 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-        return [self.questions count];
+//        return [self.questions count];
+    
+//    if (searchController.active) {
+//        return [searchResults count];
+//    } else {
+//        return [self.questions count];
+//    }
+    return [self.questions count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
     
-    Question *question= [self.questions objectAtIndex:indexPath.row];
-    cell.textLabel.text = question.questionName;
-//    if (searchController.active) {
-//        question = [searchResults objectAtIndex:indexPath.row];
+    static NSString *cellIdentifier = @"ListPrototypeCell";
+    
+    QuestionTableViewCell *cell = (QuestionTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+//    if (question.name completed) {
+//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
 //    } else {
-//        question= [self.questions objectAtIndex:indexPath.row];
-//        cell.textLabel.text = question.questionName;
+//        cell.accessoryType = UITableViewCellAccessoryNone;
 //    }
     
+    Question *question=[self.questions objectAtIndex:indexPath.row];
+//    cell.textLabel.text = question.questionName;
+//    if (searchController.active) {
+//        question = [searchResults objectAtIndex:indexPath.row];
+//            } else {
+//        question= [self.questions objectAtIndex:indexPath.row];
+//            }
+    cell.textLabel.text = question.name;
     
-    
-    if (question.completed) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    } else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
     
     return cell;
 }
@@ -158,15 +169,27 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        AddQuestionViewController *destViewController = segue.destinationViewController;
+        Question *question;
+        question = [self.questions objectAtIndex:indexPath.row];
+//        if (searchController.active) {
+//            question = [searchResults objectAtIndex:indexPath.row];
+//        } else {
+//            question = [self.questions objectAtIndex:indexPath.row];
+//        }
+        destViewController.question = question;
+    }
 }
-*/
+
 
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
