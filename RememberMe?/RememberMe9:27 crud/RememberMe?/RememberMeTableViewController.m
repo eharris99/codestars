@@ -74,6 +74,7 @@
             }
     Question *question2 = source2.question;
     if (question2 != nil) {
+        [self.questions removeObject:question];
         [self.questions addObject:question2];
         [self.tableView reloadData];
 
@@ -178,10 +179,6 @@
 }
 */
 
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
@@ -192,17 +189,22 @@
         question = [self.questions objectAtIndex:indexPath.row];
         
         
-
         
-//        if (searchController.active) {
-//            question = [searchResults objectAtIndex:indexPath.row];
-//        } else {
-//            question = [self.questions objectAtIndex:indexPath.row];
-//        }
+        
+        //        if (searchController.active) {
+        //            question = [searchResults objectAtIndex:indexPath.row];
+        //        } else {
+        //            question = [self.questions objectAtIndex:indexPath.row];
+        //        }
         destViewController.question = question;
         
     }
 }
+
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
 
 
 - (void)tableView:(UITableView *)tableView
