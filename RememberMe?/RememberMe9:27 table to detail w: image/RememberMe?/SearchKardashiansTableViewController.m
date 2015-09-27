@@ -12,15 +12,13 @@
 #import "Kardashian.h"
 
 @interface SearchKardashiansTableViewController ()
-
-
-
+//@property (nonatomic,strong) NSArray        *kardashianNames;
 @end
 
 @implementation SearchKardashiansTableViewController
 
 {
-    NSArray *kardashianNames;
+    
     NSArray *kardashians;
     NSArray *searchResults;
     UISearchController *searchController;
@@ -128,6 +126,9 @@
     
 kardashians = [NSArray arrayWithObjects: kardashian1, kardashian2, kardashian3, kardashian4, kardashian5, kardashian6, kardashian7, kardashian8, kardashian9, kardashian10, kardashian11, kardashian12, nil];
 }
+
+
+//kardashianNames = @[@"Damon",@"Kim",@"Kris",@"Kanye", @"Khloe",@"Kendall",@"Cris",@"Naya",@"North West", @"Scott",@"Kylie",@"Kourtney"];
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

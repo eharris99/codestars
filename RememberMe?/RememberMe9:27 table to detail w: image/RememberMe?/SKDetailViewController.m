@@ -17,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.knameLabel.text = self.kName;
+    self.title = self.kardashian.name;
+    self.kbirthdayLabel.text = self.kardashian.birthday;
+    self.fmImageView.image = [UIImage imageNamed:self.kardashian.image];
+    self.relationshipLabel.text=self.kardashian.relationship;
+//    NSMutableString *birthdayText = [NSMutableString string];
+
     // Do any additional setup after loading the view.
 }
 

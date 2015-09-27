@@ -10,8 +10,10 @@
 #import "Kardashian.h"
 
 @interface SKDetailViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *knameLabel;
-@property (nonatomic, strong) NSString *kName;
+
+@property (weak, nonatomic) IBOutlet UILabel *kbirthdayLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *fmImageView;
+@property (weak, nonatomic) IBOutlet UILabel *relationshipLabel;
 @property (nonatomic, strong) Kardashian *kardashian;
 
 @end
