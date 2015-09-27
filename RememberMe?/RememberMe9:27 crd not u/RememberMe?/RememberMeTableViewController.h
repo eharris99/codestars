@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RememberMeTableViewController : UITableViewController
+@interface RememberMeTableViewController : UITableViewController<UITableViewDelegate,
+UITableViewDataSource>
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue;
 

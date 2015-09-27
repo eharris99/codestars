@@ -11,6 +11,7 @@
 #import "Question.h"
 #import "AddQuestionViewController.h"
 #import "QuestionTableViewCell.h"
+#import "QuestionDetailViewController.h"
 
 @interface RememberMeTableViewController ()
 
@@ -176,23 +177,29 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+    if ([segue.identifier isEqualToString:@"showQuestion"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        AddQuestionViewController *destViewController = segue.destinationViewController;
+        QuestionDetailViewController *destViewController = segue.destinationViewController;
         Question *question;
         question = [self.questions objectAtIndex:indexPath.row];
+        
+        
+
+        
 //        if (searchController.active) {
 //            question = [searchResults objectAtIndex:indexPath.row];
 //        } else {
 //            question = [self.questions objectAtIndex:indexPath.row];
 //        }
         destViewController.question = question;
+        
     }
 }
 
 
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     Question *tappedItem = [self.questions objectAtIndex:indexPath.row];
     tappedItem.completed = !tappedItem.completed;
@@ -206,5 +213,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.questions removeObjectAtIndex:indexPath.row];
     [tableView reloadData];
 }
+
+
 
 @end

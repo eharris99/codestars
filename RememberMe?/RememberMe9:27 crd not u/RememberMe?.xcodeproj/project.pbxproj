@@ -18,6 +18,8 @@
 		D29A73651BB85EAD001C28F2 /* SearchKardashiansTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73641BB85EAD001C28F2 /* SearchKardashiansTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		D29A73681BB869BA001C28F2 /* SKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73671BB869BA001C28F2 /* SKDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D29A736B1BB87349001C28F2 /* Kardashian.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A736A1BB87349001C28F2 /* Kardashian.m */; settings = {ASSET_TAGS = (); }; };
+		D29A736E1BB898A3001C28F2 /* QuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A736D1BB898A3001C28F2 /* QuestionDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D29A73711BB89E38001C28F2 /* EditQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73701BB89E38001C28F2 /* EditQuestionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D29F3A801BB6125500A2B96E /* AddQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F3A7F1BB6125500A2B96E /* AddQuestionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D29F3A811BB61FCF00A2B96E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EAB7D31BAE02A0000AE9AD /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		D2D6E67A1BB7AC9B004D71D2 /* KardashiansCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6E6791BB7AC9B004D71D2 /* KardashiansCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -63,6 +65,10 @@
 		D29A73671BB869BA001C28F2 /* SKDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDetailViewController.m; sourceTree = "<group>"; };
 		D29A73691BB87349001C28F2 /* Kardashian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kardashian.h; sourceTree = "<group>"; };
 		D29A736A1BB87349001C28F2 /* Kardashian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kardashian.m; sourceTree = "<group>"; };
+		D29A736C1BB898A3001C28F2 /* QuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDetailViewController.h; sourceTree = "<group>"; };
+		D29A736D1BB898A3001C28F2 /* QuestionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDetailViewController.m; sourceTree = "<group>"; };
+		D29A736F1BB89E38001C28F2 /* EditQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditQuestionViewController.h; sourceTree = "<group>"; };
+		D29A73701BB89E38001C28F2 /* EditQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditQuestionViewController.m; sourceTree = "<group>"; };
 		D29F3A7E1BB6125500A2B96E /* AddQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddQuestionViewController.h; sourceTree = "<group>"; };
 		D29F3A7F1BB6125500A2B96E /* AddQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddQuestionViewController.m; sourceTree = "<group>"; };
 		D2D6E6781BB7AC9B004D71D2 /* KardashiansCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KardashiansCollectionViewController.h; sourceTree = "<group>"; };
@@ -158,6 +164,10 @@
 				D29A73671BB869BA001C28F2 /* SKDetailViewController.m */,
 				D29A73691BB87349001C28F2 /* Kardashian.h */,
 				D29A736A1BB87349001C28F2 /* Kardashian.m */,
+				D29A736C1BB898A3001C28F2 /* QuestionDetailViewController.h */,
+				D29A736D1BB898A3001C28F2 /* QuestionDetailViewController.m */,
+				D29A736F1BB89E38001C28F2 /* EditQuestionViewController.h */,
+				D29A73701BB89E38001C28F2 /* EditQuestionViewController.m */,
 			);
 			path = "RememberMe?";
 			sourceTree = "<group>";
@@ -292,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29A73711BB89E38001C28F2 /* EditQuestionViewController.m in Sources */,
 				D243BAAD1BADB3E50036DFF9 /* FamilyPhotosCollectionViewCell.m in Sources */,
 				D2038B181BB6521900969FB0 /* QuestionTableViewCell.m in Sources */,
 				D2D6E67D1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.m in Sources */,
@@ -302,6 +313,7 @@
 				D219F56E1BB5EF8D00C43CDB /* DetailViewController.m in Sources */,
 				D29A73621BB84D4E001C28F2 /* SearchKardashiansTableViewController.m in Sources */,
 				D29A73651BB85EAD001C28F2 /* SearchKardashiansTableViewCell.m in Sources */,
+				D29A736E1BB898A3001C28F2 /* QuestionDetailViewController.m in Sources */,
 				D2F4053C1BACDF1E00DE4181 /* AppDelegate.m in Sources */,
 				D2F405391BACDF1E00DE4181 /* main.m in Sources */,
 				D2D6E67A1BB7AC9B004D71D2 /* KardashiansCollectionViewController.m in Sources */,

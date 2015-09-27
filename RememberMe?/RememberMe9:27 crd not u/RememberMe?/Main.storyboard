@@ -5,6 +5,65 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
+        <!--Question Detail View Controller-->
+        <scene sceneID="9vu-sd-6Mh">
+            <objects>
+                <viewController id="ASl-Cr-VLJ" customClass="QuestionDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ud-6Q-Aco">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zmE-p4-ObY">
+                                <rect key="frame" x="20" y="170" width="280" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UGZ-f5-KIM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="81f-Ip-t0P">
+                            <connections>
+                                <segue destination="VRi-Me-0Lf" kind="push" identifier="editQuestion" id="iTj-aE-fBS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="questionLabel" destination="zmE-p4-ObY" id="ucm-9u-zX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8HE-nX-f6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6268" y="68"/>
+        </scene>
+        <!--Edit Question View Controller-->
+        <scene sceneID="6i8-0n-YXJ">
+            <objects>
+                <viewController id="VRi-Me-0Lf" customClass="EditQuestionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kS6-mJ-Rvw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="change this question" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="XvX-ze-7q2">
+                                <rect key="frame" x="20" y="269" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rYz-te-Qcf">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="S1O-79-yGt"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="swU-Ou-VXg"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3IY-4e-8sg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6700" y="-271"/>
+        </scene>
         <!--Your Quiz!-->
         <scene sceneID="Hdb-lz-ArF">
             <objects>
@@ -36,6 +95,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="textLabel" destination="kjg-by-ruB" id="wmc-oo-foX"/>
+                                    <segue destination="ASl-Cr-VLJ" kind="push" identifier="showQuestion" id="eqv-EK-Wwi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -220,7 +280,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell2" id="FdR-wd-hKr" customClass="KardashiansCollectionViewCell">
-                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
