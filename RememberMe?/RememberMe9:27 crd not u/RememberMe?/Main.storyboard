@@ -17,26 +17,40 @@
                                 <rect key="frame" x="20" y="170" width="280" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="edit question here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="1Kz-qh-yHA">
+                                <rect key="frame" x="20" y="269" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="UGZ-f5-KIM">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="81f-Ip-t0P">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GdF-gV-bLo">
                             <connections>
-                                <segue destination="VRi-Me-0Lf" kind="push" identifier="editQuestion" id="iTj-aE-fBS"/>
+                                <segue destination="GDX-wH-6SO" kind="unwind" unwindAction="unwindToList:" id="UkW-7p-9kZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="81f-Ip-t0P">
+                            <connections>
+                                <segue destination="GDX-wH-6SO" kind="unwind" unwindAction="unwindToList:" id="HRS-va-fZa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="questionLabel" destination="zmE-p4-ObY" id="ucm-9u-zX0"/>
+                        <outlet property="questionLabel" destination="zmE-p4-ObY" id="JHH-O9-084"/>
+                        <outlet property="saveButton" destination="81f-Ip-t0P" id="vMg-bd-6TV"/>
+                        <outlet property="textField" destination="1Kz-qh-yHA" id="mEJ-o9-O4P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8HE-nX-f6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GDX-wH-6SO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6268" y="68"/>
+            <point key="canvasLocation" x="6268" y="16"/>
         </scene>
         <!--Edit Question View Controller-->
         <scene sceneID="6i8-0n-YXJ">
@@ -384,7 +398,7 @@
                                             <rect key="frame" x="15" y="0.0" width="270" height="55"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>

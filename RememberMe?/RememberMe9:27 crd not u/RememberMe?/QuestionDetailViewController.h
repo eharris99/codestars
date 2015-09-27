@@ -11,7 +11,6 @@
 
 @interface QuestionDetailViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 @property Question *question;
 
 @end

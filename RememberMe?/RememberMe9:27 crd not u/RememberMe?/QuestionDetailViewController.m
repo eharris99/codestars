@@ -11,6 +11,12 @@
 #import "EditQuestionViewController.h"
 
 @interface QuestionDetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+
+
 
 @end
 
@@ -43,6 +49,17 @@
 //
 //
 //}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+if (sender != self.saveButton) return;
+if (self.textField.text.length > 0) {
+//    self.question = [[Question alloc] init];
+    self.question.name = self.textField.text;
+    self.question.completed = NO;
+}
+}
 
 @end
 

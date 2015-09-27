@@ -66,13 +66,21 @@
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue {
     AddQuestionViewController *source = [segue sourceViewController];
+    QuestionDetailViewController *source2 = [segue sourceViewController];
     Question *question = source.question;
     if (question != nil) {
         [self.questions addObject:question];
         [self.tableView reloadData];
+            }
+    Question *question2 = source2.question;
+    if (question2 != nil) {
+        [self.questions addObject:question2];
+        [self.tableView reloadData];
+
     }
-    
-}
+    }
+
+
 
 //- (void)filterContentForSearchText:(NSString *)searchText {
 //    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"(question contains[cd] %@) ) OR (question contains[cd] %@)", searchText];
