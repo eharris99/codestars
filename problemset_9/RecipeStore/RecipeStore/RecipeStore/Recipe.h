@@ -15,9 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Insert code here to declare functionality of your managed object subclass
 
-@property (nullable, nonatomic, retain) NSString *name;
-@property (nullable, nonatomic, retain) NSString *image;
-@property (nullable, nonatomic, retain) NSString *prepTime;
+
 
 @end
 

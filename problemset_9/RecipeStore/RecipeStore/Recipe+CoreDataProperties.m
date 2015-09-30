@@ -13,5 +13,8 @@
 
 @implementation Recipe (CoreDataProperties)
 
+@dynamic name;
+@dynamic image;
+@dynamic prepTime;
 
 @end

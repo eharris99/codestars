@@ -7,14 +7,20 @@
 //
 
 #import "RecipeStoreTableViewController.h"
-
-
+#import "AppDelegate.h"
+#import "Recipe.h"
+#import "Recipe+CoreDataProperties.h"
 
 @interface RecipeStoreTableViewController ()
 
 @end
 
 @implementation RecipeStoreTableViewController
+
+{
+    NSFetchedResultsController *fetchResultController;
+    NSArray *recipes;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,12 +34,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSFetchRequest *fetchRequest = [ [NSFetchRequest alloc] initWithEntityName:@"Recipe"];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    fetchRequest.sortDescriptors=@[sortDescriptor];
+    AppDelegate *appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
+    NSManagedObjectContext *managedObjectContext=[appDelegate managedObjectContext];
+    
+    if (managedObjectContext != nil) {
+        fetchResultController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+        fetchResultController.delegate = self;
+        
+        NSError *error;
+        if ([fetchResultController performFetch:&error]) {
+            recipes=fetchResultController.fetchedObjects;
+        }else{
+            NSLog(@"Can't get the record! %@ %@", error, [error localizedDescription]);
+        }
+    }
+    }
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -48,7 +74,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return [recipes count];
 }
 
 
@@ -56,6 +82,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
+    
+    Recipe *recipe=( Recipe *)recipes[indexPath.row];
+    cell.textLabel.text=recipe.name;
+    cell.detailTextLabel.text=[NSString stringWithFormat:@"%@  - %@", recipe.image, recipe.prepTime];
     
     return cell;
 }
@@ -78,6 +108,37 @@
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
+}
+
+- (void) controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView beginUpdates];
+}
+
+- (void) controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
+    
+    switch (type) {
+        case NSFetchedResultsChangeInsert:
+            [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeUpdate:
+            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        default:
+            [self.tableView reloadData];
+            break;
+    }
+    
+    recipes = controller.fetchedObjects;
+}
+
+- (void) controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView endUpdates];
 }
 
 

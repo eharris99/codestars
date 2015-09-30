@@ -12,9 +12,7 @@
 
 // Insert code here to add functionality to your managed object subclass
 
-@dynamic name;
-@dynamic image;
-@dynamic prepTime;
+
 
 
 @end

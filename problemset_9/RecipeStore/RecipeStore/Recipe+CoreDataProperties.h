@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Recipe (CoreDataProperties)
 
+@property (nullable, nonatomic, retain) NSString *name;
+@property (nullable, nonatomic, retain) NSString *image;
+@property (nullable, nonatomic, retain) NSString *prepTime;
+
 @end
 
 NS_ASSUME_NONNULL_END

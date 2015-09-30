@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-
-@interface RecipeStoreTableViewController : UITableViewController
+@interface RecipeStoreTableViewController : UITableViewController<NSFetchedResultsControllerDelegate>
 
 @end
