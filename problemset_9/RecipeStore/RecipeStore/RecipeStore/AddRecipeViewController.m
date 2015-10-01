@@ -31,6 +31,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (self.selectedRecipe) {
+        self.nameTextField.text = self.selectedRecipe.name;
+        self.imageTextField.text = self.selectedRecipe.image;
+        self.prepTimeTextField.text = self.selectedRecipe.prepTime;
+}
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,19 +55,37 @@
 
 - (IBAction)save:(id)sender {
     
-    AppDelegate *appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
-    NSManagedObjectContext *managedObjectContext = [appDelegate managedObjectContext];
+        AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        NSManagedObjectContext *managedObjectContext = [appDelegate managedObjectContext];
+        if (self.selectedRecipe) {
+            recipe = self.selectedRecipe;
+        } else {
+            recipe = (Recipe *)[NSEntityDescription insertNewObjectForEntityForName:@"Recipe"
+        inManagedObjectContext:managedObjectContext];
+        }
+        recipe.name = self.nameTextField.text;
+        recipe.image = self.imageTextField.text;
+        recipe.prepTime = self.prepTimeTextField.text;
+        NSError *error;
+        if (![managedObjectContext save:&error]) {
+            NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+        }
+        [self dismissViewControllerAnimated:YES completion:nil];
     
-    recipe = (Recipe *) [NSEntityDescription insertNewObjectForEntityForName:@"Recipe" inManagedObjectContext:managedObjectContext];
-    recipe.name = self.nameTextField.text;
-    recipe.image=self.imageTextField.text;
-    recipe.prepTime=self.prepTimeTextField.text;
     
-    NSError *error;
-    if (![managedObjectContext save:&error]) {
-        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
-    }
-    [self dismissViewControllerAnimated:YES completion:nil];
+//    AppDelegate *appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
+//    NSManagedObjectContext *managedObjectContext = [appDelegate managedObjectContext];
+//    
+//    recipe = (Recipe *) [NSEntityDescription insertNewObjectForEntityForName:@"Recipe" inManagedObjectContext:managedObjectContext];
+//    recipe.name = self.nameTextField.text;
+//    recipe.image=self.imageTextField.text;
+//    recipe.prepTime=self.prepTimeTextField.text;
+//    
+//    NSError *error;
+//    if (![managedObjectContext save:&error]) {
+//        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+//    }
+//    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)cancel:(id)sender {

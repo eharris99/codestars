@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *prepTimeTextField;
 - (IBAction)save:(id)sender;
 - (IBAction)cancel:(id)sender;
+@property (strong) Recipe *selectedRecipe;
 
 @end

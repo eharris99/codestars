@@ -36,6 +36,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="W1m-ob-4b8" kind="modal" identifier="UpdateRecipe" id="boJ-s3-381"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -147,4 +150,7 @@
             <point key="canvasLocation" x="1378" y="253"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LdA-VX-pHc"/>
+    </inferredMetricsTieBreakers>
 </document>

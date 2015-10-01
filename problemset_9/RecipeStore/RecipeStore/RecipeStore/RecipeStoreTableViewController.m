@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "Recipe.h"
 #import "Recipe+CoreDataProperties.h"
+#import "AddRecipeViewController.h"
 
 @interface RecipeStoreTableViewController ()
 
@@ -33,7 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+        
     NSFetchRequest *fetchRequest = [ [NSFetchRequest alloc] initWithEntityName:@"Recipe"];
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
     fetchRequest.sortDescriptors=@[sortDescriptor];
@@ -73,7 +74,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return [recipes count];
 }
 
@@ -102,12 +102,27 @@
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+//    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//        // Delete the row from the data source
+//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+//        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//    }
+    
+    AppDelegate *appDelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    NSManagedObjectContext *managedObjectContext=[appDelegate managedObjectContext];
+    
+    if (managedObjectContext != nil) {
+        Recipe *recipeToDelete= (Recipe *)[fetchResultController objectAtIndexPath:indexPath];
+        [managedObjectContext deleteObject:recipeToDelete];
+        
+        NSError *error;
+        if (![managedObjectContext save:&error]) {
+            
+            NSLog(@"Can't delete the record! %@ %@", error, [error localizedDescription]);
+        }
+    }
+
 }
 
 - (void) controllerWillChangeContent:(NSFetchedResultsController *)controller {
@@ -141,6 +156,11 @@
     [self.tableView endUpdates];
 }
 
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    return YES;
+}
+
 
 /*
 // Override to support rearranging the table view.
@@ -156,14 +176,21 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"UpdateRecipe"]) {
+        Recipe *selectedRecipe = [recipes objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
+        UINavigationController *destViewController = segue.destinationViewController;
+        AddRecipeViewController *recipeViewController =
+        (AddRecipeViewController*)destViewController.topViewController;
+        recipeViewController.selectedRecipe = selectedRecipe;
+    }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
