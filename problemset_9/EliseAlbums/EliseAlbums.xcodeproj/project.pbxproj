@@ -18,6 +18,7 @@
 		D2E1E2C11BBDE6D10094C669 /* AlbumsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2C01BBDE6D10094C669 /* AlbumsCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D2E1E2C41BBDE72E0094C669 /* AlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2C31BBDE72E0094C669 /* AlbumCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		D2E1E2C71BBDE7B60094C669 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2C61BBDE7B60094C669 /* InfoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D2E1E2CC1BBDEF260094C669 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2CB1BBDEF260094C669 /* Album.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		D2E1E2C31BBDE72E0094C669 /* AlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewCell.m; sourceTree = "<group>"; };
 		D2E1E2C51BBDE7B60094C669 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		D2E1E2C61BBDE7B60094C669 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		D2E1E2CA1BBDEF260094C669 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		D2E1E2CB1BBDEF260094C669 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				D2E1E2C31BBDE72E0094C669 /* AlbumCollectionViewCell.m */,
 				D2E1E2C51BBDE7B60094C669 /* InfoViewController.h */,
 				D2E1E2C61BBDE7B60094C669 /* InfoViewController.m */,
+				D2E1E2CA1BBDEF260094C669 /* Album.h */,
+				D2E1E2CB1BBDEF260094C669 /* Album.m */,
 			);
 			path = EliseAlbums;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				D2E1E2C71BBDE7B60094C669 /* InfoViewController.m in Sources */,
 				D2E1E28E1BBDE6570094C669 /* AppDelegate.m in Sources */,
 				D2E1E2971BBDE6570094C669 /* EliseAlbums.xcdatamodeld in Sources */,
+				D2E1E2CC1BBDEF260094C669 /* Album.m in Sources */,
 				D2E1E28B1BBDE6570094C669 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

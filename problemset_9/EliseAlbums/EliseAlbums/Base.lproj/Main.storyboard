@@ -59,13 +59,49 @@
                     <view key="view" contentMode="scaleToFill" id="T4F-vb-vAU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a6T-tZ-Y75">
+                                <rect key="frame" x="40" y="72" width="240" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzM-w4-i7b">
+                                <rect key="frame" x="74" y="378" width="173" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIs-nm-GOE">
+                                <rect key="frame" x="20" y="329" width="276" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fm-Rw-cXL">
+                                <rect key="frame" x="29" y="401" width="240" height="154"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="m8h-uc-OuD"/>
+                    <navigationItem key="navigationItem" id="O8V-Jw-HcH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="m3g-3u-jiL">
+                            <connections>
+                                <action selector="close:" destination="Ldb-WN-2BV" id="1mT-q1-DVU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="albumBlurb" destination="5Fm-Rw-cXL" id="Kzu-zG-b2h"/>
+                        <outlet property="albumImageView" destination="a6T-tZ-Y75" id="Adl-NF-d1H"/>
+                        <outlet property="albumTitle" destination="lIs-nm-GOE" id="fcv-YJ-R1w"/>
+                        <outlet property="albumYear" destination="gzM-w4-i7b" id="6Mm-sL-sog"/>
+                        <outlet property="view" destination="T4F-vb-vAU" id="WNp-16-Dp8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8tH-9W-d85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="255"/>
+            <point key="canvasLocation" x="1178" y="238"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q7p-3D-wQj">

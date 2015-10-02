@@ -7,6 +7,8 @@
 //
 
 #import "InfoViewController.h"
+#import "AlbumsCollectionViewController.h"
+#import "Album.h"
 
 @interface InfoViewController ()
 
@@ -17,6 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = self.albumTitleName;
+    self.albumImageView.image = [UIImage imageNamed:self.albumImageName];
+    self.albumYear.text = self.albumYearName;
+    self.albumBlurb.text = self.albumBlurbName;
+    self.albumTitle.text = self.albumTitleName;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +42,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)close:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end
