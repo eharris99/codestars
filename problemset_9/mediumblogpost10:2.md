@@ -1,0 +1,1 @@
+mediumblogpost on methods in UICollectionViews is [here] (https://medium.com/@eliseharris99/methods-in-uicollectionviews-ab6900485457)
