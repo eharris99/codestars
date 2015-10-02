@@ -84,13 +84,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="O8V-Jw-HcH">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="m3g-3u-jiL">
-                            <connections>
-                                <action selector="close:" destination="Ldb-WN-2BV" id="1mT-q1-DVU"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="O8V-Jw-HcH"/>
                     <connections>
                         <outlet property="albumBlurb" destination="5Fm-Rw-cXL" id="Kzu-zG-b2h"/>
                         <outlet property="albumImageView" destination="a6T-tZ-Y75" id="Adl-NF-d1H"/>
@@ -101,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8tH-9W-d85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1178" y="238"/>
+            <point key="canvasLocation" x="1221" y="238"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q7p-3D-wQj">
