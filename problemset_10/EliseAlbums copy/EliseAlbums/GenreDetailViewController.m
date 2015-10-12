@@ -7,6 +7,8 @@
 //
 
 #import "GenreDetailViewController.h"
+#import "Genre.h"
+
 
 @interface GenreDetailViewController ()
 
@@ -16,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSURL *url = [NSURL URLWithString:self.url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
     // Do any additional setup after loading the view.
 }
 

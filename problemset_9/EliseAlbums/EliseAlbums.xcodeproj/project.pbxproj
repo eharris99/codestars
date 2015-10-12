@@ -15,10 +15,10 @@
 		D2E1E29C1BBDE6570094C669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E1E29A1BBDE6570094C669 /* LaunchScreen.storyboard */; };
 		D2E1E2A71BBDE6570094C669 /* EliseAlbumsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2A61BBDE6570094C669 /* EliseAlbumsTests.m */; };
 		D2E1E2B21BBDE6570094C669 /* EliseAlbumsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2B11BBDE6570094C669 /* EliseAlbumsUITests.m */; };
-		D2E1E2C11BBDE6D10094C669 /* AlbumsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2C01BBDE6D10094C669 /* AlbumsCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D2E1E2C41BBDE72E0094C669 /* AlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2C31BBDE72E0094C669 /* AlbumCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		D2E1E2C71BBDE7B60094C669 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2C61BBDE7B60094C669 /* InfoViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D2E1E2CC1BBDEF260094C669 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2CB1BBDEF260094C669 /* Album.m */; settings = {ASSET_TAGS = (); }; };
+		D2E1E2C11BBDE6D10094C669 /* AlbumsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2C01BBDE6D10094C669 /* AlbumsCollectionViewController.m */; };
+		D2E1E2C41BBDE72E0094C669 /* AlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2C31BBDE72E0094C669 /* AlbumCollectionViewCell.m */; };
+		D2E1E2C71BBDE7B60094C669 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2C61BBDE7B60094C669 /* InfoViewController.m */; };
+		D2E1E2CC1BBDEF260094C669 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2CB1BBDEF260094C669 /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -385,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -422,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -11,6 +11,7 @@
 @interface Genre : NSObject
 
 @property NSString *name;
+@property (strong, nonatomic) NSString *link;
 
 
 @end

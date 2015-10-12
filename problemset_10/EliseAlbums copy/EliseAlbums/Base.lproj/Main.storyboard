@@ -150,13 +150,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="UoE-W7-rUD">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell2" id="UoE-W7-rUD" customClass="GenresTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UoE-W7-rUD" id="4Kd-y3-PHR">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEz-fJ-EUT">
-                                            <rect key="frame" x="35" y="10" width="174" height="21"/>
+                                            <rect key="frame" x="18" y="11" width="191" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -164,6 +164,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="textLabel" destination="dEz-fJ-EUT" id="xU3-Qg-8pm"/>
                                     <segue destination="3Em-Bo-02H" kind="push" identifier="showGenreDetail" id="bsM-wP-54F"/>
                                 </connections>
                             </tableViewCell>
@@ -177,12 +178,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nj6-LA-PhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="1118"/>
+            <point key="canvasLocation" x="897" y="1117"/>
         </scene>
-        <!--View Controller-->
+        <!--Genre Detail View Controller-->
         <scene sceneID="LPY-bt-rcz">
             <objects>
-                <viewController id="3Em-Bo-02H" sceneMemberID="viewController">
+                <viewController id="3Em-Bo-02H" customClass="GenreDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VZn-7A-04m"/>
                         <viewControllerLayoutGuide type="bottom" id="jL6-09-yEW"/>
@@ -199,6 +200,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="x0Q-cb-Oel"/>
+                    <connections>
+                        <outlet property="webView" destination="s6k-Gg-srg" id="fGn-85-LDR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L17-eY-MBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

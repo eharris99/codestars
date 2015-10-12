@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Genre.h"
 
 @interface GenreDetailViewController : UIViewController
+
+@property (nonatomic, weak) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) NSString *url;
+@property (nonatomic, strong) Genre *genre;
 
 @end
