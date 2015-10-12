@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8635CBB0-49E8-4F08-986A-C182080A2607</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EliseAlbums</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
+		<string>https://github.com/eharris99/codestars.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>problemset_10/EliseAlbums copy/EliseAlbums.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>26D6FC295C439749161FAA0C1DC5EB977B7B1234</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/eharris99/codestars.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>26D6FC295C439749161FAA0C1DC5EB977B7B1234</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>26D6FC295C439749161FAA0C1DC5EB977B7B1234</string>
+			<key>IDESourceControlWCCName</key>
+			<string>codestars</string>
+		</dict>
+	</array>
+</dict>
+</plist>

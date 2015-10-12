@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4dx-K1-uJ1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="huI-3q-Jv7">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Albums Collection View Controller-->
@@ -33,7 +33,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="albumImage" destination="hFC-ig-2oJ" id="4cV-7s-kik"/>
-                                    <segue destination="Ldb-WN-2BV" kind="push" identifier="showInfoDetail" id="p3N-NL-eB0"/>
+                                    <segue destination="Ldb-WN-2BV" kind="push" identifier="showInfoDetail" id="lkR-9g-kkd"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -46,7 +46,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDl-o7-UGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717" y="255"/>
+            <point key="canvasLocation" x="1249" y="255"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="4l3-ZS-73T">
@@ -66,41 +66,48 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzM-w4-i7b">
                                 <rect key="frame" x="74" y="378" width="173" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIs-nm-GOE">
                                 <rect key="frame" x="20" y="329" width="276" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fm-Rw-cXL">
                                 <rect key="frame" x="29" y="401" width="240" height="154"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="O8V-Jw-HcH"/>
+                    <navigationItem key="navigationItem" id="O8V-Jw-HcH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="gQY-CC-DBY">
+                            <connections>
+                                <action selector="close:" destination="Ldb-WN-2BV" id="3CN-a0-kf9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="albumBlurb" destination="5Fm-Rw-cXL" id="Kzu-zG-b2h"/>
-                        <outlet property="albumImageView" destination="a6T-tZ-Y75" id="Adl-NF-d1H"/>
-                        <outlet property="albumTitle" destination="lIs-nm-GOE" id="fcv-YJ-R1w"/>
-                        <outlet property="albumYear" destination="gzM-w4-i7b" id="6Mm-sL-sog"/>
+                        <outlet property="albumBlurb" destination="5Fm-Rw-cXL" id="Ot0-Nm-1Cp"/>
+                        <outlet property="albumImageView" destination="a6T-tZ-Y75" id="WQa-ZK-xOp"/>
+                        <outlet property="albumTitle" destination="lIs-nm-GOE" id="X2s-xU-gh7"/>
+                        <outlet property="albumYear" destination="gzM-w4-i7b" id="4tz-HZ-3ZQ"/>
                         <outlet property="view" destination="T4F-vb-vAU" id="WNp-16-Dp8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8tH-9W-d85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1221" y="238"/>
+            <point key="canvasLocation" x="1654" y="255"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="q7p-3D-wQj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4dx-K1-uJ1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="iWj-11-rhg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z5d-Gq-u1z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -113,7 +120,30 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfP-xw-SbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="717" y="255"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="w6A-sB-fKb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="huI-3q-Jv7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="n6C-W9-kZy">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4dx-K1-uJ1" kind="relationship" relationship="viewControllers" id="cE4-pa-2DU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LY3-JY-gcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="185" y="255"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

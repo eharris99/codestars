@@ -1,0 +1,1 @@
+medium blog post on databases is [here](https://medium.com/@eliseharris99/on-databases-12d8aab9614f) 

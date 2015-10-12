@@ -1,0 +1,1 @@
+medium blog post on servers is [here](https://medium.com/@eliseharris99/on-servers-20978ab4c84c)
