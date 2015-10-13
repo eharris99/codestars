@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yij-qu-1dt">
-                            <size key="itemSize" width="133" height="130"/>
+                            <size key="itemSize" width="118" height="113"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -22,11 +22,11 @@
                                 <rect key="frame" x="0.0" y="64" width="133" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="133" height="130"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="118" height="113"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFC-ig-2oJ">
-                                            <rect key="frame" x="4" y="8" width="121" height="114"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="101" height="101"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -46,7 +46,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDl-o7-UGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1249" y="255"/>
+            <point key="canvasLocation" x="1743" y="255"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="4l3-ZS-73T">
@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8tH-9W-d85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="255"/>
+            <point key="canvasLocation" x="2186" y="255"/>
         </scene>
         <!--Item-->
         <scene sceneID="q7p-3D-wQj">
@@ -120,7 +120,85 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfP-xw-SbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717" y="255"/>
+            <point key="canvasLocation" x="1249" y="255"/>
+        </scene>
+        <!--Artist Detail View Controller-->
+        <scene sceneID="xw3-TR-hk8">
+            <objects>
+                <viewController id="Am6-q4-7NM" customClass="ArtistDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dbU-C9-S8g"/>
+                        <viewControllerLayoutGuide type="bottom" id="gnC-lD-IUs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aes-kc-Mvu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYy-7I-LUT">
+                                <rect key="frame" x="0.0" y="-126" width="378" height="701"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nQ4-rP-7RS"/>
+                    <connections>
+                        <outlet property="mozartWebView" destination="dYy-7I-LUT" id="PSv-hc-fuw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AuN-nE-daQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-486" y="286"/>
+        </scene>
+        <!--Artist View Controller-->
+        <scene sceneID="OiH-9K-5xC">
+            <objects>
+                <viewController id="PKJ-wW-zsv" customClass="ArtistViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t7R-hx-5rq"/>
+                        <viewControllerLayoutGuide type="bottom" id="s9a-42-cZe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hhu-aB-zZ9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWZ-JD-bBt">
+                                <rect key="frame" x="185" y="317" width="108" height="30"/>
+                                <state key="normal" title="WikiPedia Entry">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Am6-q4-7NM" kind="push" id="tQ5-zK-62j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cag-EB-Sfj">
+                                <rect key="frame" x="32" y="317" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mozart" translatesAutoresizingMaskIntoConstraints="NO" id="BPb-eM-GZ7">
+                                <rect key="frame" x="40" y="72" width="240" height="235"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zz0-3e-UdV">
+                                <rect key="frame" x="32" y="378" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lV3-1t-0Zc"/>
+                    <connections>
+                        <outlet property="artistBlurb" destination="zz0-3e-UdV" id="IeE-Hx-LT6"/>
+                        <outlet property="artistName" destination="cag-EB-Sfj" id="fFZ-YT-wUa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0V-Me-WfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="387"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w6A-sB-fKb">
@@ -135,11 +213,12 @@
                     <connections>
                         <segue destination="4dx-K1-uJ1" kind="relationship" relationship="viewControllers" id="cE4-pa-2DU"/>
                         <segue destination="Eei-2I-h7v" kind="relationship" relationship="viewControllers" id="P8M-cA-18O"/>
+                        <segue destination="cUm-az-ohL" kind="relationship" relationship="viewControllers" id="c5i-KB-SCy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LY3-JY-gcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="185" y="255"/>
+            <point key="canvasLocation" x="717" y="255"/>
         </scene>
         <!--Genres Table View Controller-->
         <scene sceneID="Uns-kB-dri">
@@ -225,9 +304,31 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LE5-el-gSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251" y="1037"/>
+            <point key="canvasLocation" x="423" y="1099"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="W6n-Yd-HDn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cUm-az-ohL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bfK-UH-SBN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E1N-r0-NLI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PKJ-wW-zsv" kind="relationship" relationship="rootViewController" id="cZz-J0-1gV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtd-xz-eyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="348"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mozart" width="2079" height="3056"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

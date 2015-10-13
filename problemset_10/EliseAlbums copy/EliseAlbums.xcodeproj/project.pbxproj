@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22157851BCC7A9300B22740 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22157841BCC7A9300B22740 /* LaunchScreen.xib */; };
+		D22157871BCC7C6400B22740 /* music-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22157861BCC7C6400B22740 /* music-5.jpg */; };
+		D221578A1BCC84AE00B22740 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = D22157891BCC84AE00B22740 /* Artist.m */; };
+		D221578D1BCC84C200B22740 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D221578C1BCC84C200B22740 /* ArtistViewController.m */; };
+		D22157901BCC852E00B22740 /* ArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D221578F1BCC852E00B22740 /* ArtistDetailViewController.m */; };
+		D22157921BCC889400B22740 /* mozart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22157911BCC889400B22740 /* mozart.jpg */; };
 		D2B5D4D61BCC251F00E15CE9 /* GenresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B5D4D51BCC251F00E15CE9 /* GenresTableViewController.m */; };
 		D2B5D4D91BCC27E500E15CE9 /* GenresTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B5D4D81BCC27E500E15CE9 /* GenresTableViewCell.m */; };
 		D2B5D4DC1BCC2AC000E15CE9 /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B5D4DB1BCC2AC000E15CE9 /* Genre.m */; };
@@ -16,7 +22,6 @@
 		D2E1E2941BBDE6570094C669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E1E2921BBDE6570094C669 /* Main.storyboard */; };
 		D2E1E2971BBDE6570094C669 /* EliseAlbums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2951BBDE6570094C669 /* EliseAlbums.xcdatamodeld */; };
 		D2E1E2991BBDE6570094C669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E1E2981BBDE6570094C669 /* Assets.xcassets */; };
-		D2E1E29C1BBDE6570094C669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E1E29A1BBDE6570094C669 /* LaunchScreen.storyboard */; };
 		D2E1E2A71BBDE6570094C669 /* EliseAlbumsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2A61BBDE6570094C669 /* EliseAlbumsTests.m */; };
 		D2E1E2B21BBDE6570094C669 /* EliseAlbumsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2B11BBDE6570094C669 /* EliseAlbumsUITests.m */; };
 		D2E1E2C11BBDE6D10094C669 /* AlbumsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1E2C01BBDE6D10094C669 /* AlbumsCollectionViewController.m */; };
@@ -43,6 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D22157841BCC7A9300B22740 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		D22157861BCC7C6400B22740 /* music-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "music-5.jpg"; path = "../../../../music-5.jpg"; sourceTree = "<group>"; };
+		D22157881BCC84AE00B22740 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		D22157891BCC84AE00B22740 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		D221578B1BCC84C200B22740 /* ArtistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistViewController.h; sourceTree = "<group>"; };
+		D221578C1BCC84C200B22740 /* ArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistViewController.m; sourceTree = "<group>"; };
+		D221578E1BCC852E00B22740 /* ArtistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDetailViewController.h; sourceTree = "<group>"; };
+		D221578F1BCC852E00B22740 /* ArtistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailViewController.m; sourceTree = "<group>"; };
+		D22157911BCC889400B22740 /* mozart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mozart.jpg; path = ../../../../mozart.jpg; sourceTree = "<group>"; };
 		D2B5D4D41BCC251F00E15CE9 /* GenresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenresTableViewController.h; sourceTree = "<group>"; };
 		D2B5D4D51BCC251F00E15CE9 /* GenresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenresTableViewController.m; sourceTree = "<group>"; };
 		D2B5D4D71BCC27E500E15CE9 /* GenresTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenresTableViewCell.h; sourceTree = "<group>"; };
@@ -58,7 +72,6 @@
 		D2E1E2931BBDE6570094C669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2E1E2961BBDE6570094C669 /* EliseAlbums.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EliseAlbums.xcdatamodel; sourceTree = "<group>"; };
 		D2E1E2981BBDE6570094C669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2E1E29B1BBDE6570094C669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2E1E29D1BBDE6570094C669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E1E2A21BBDE6570094C669 /* EliseAlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EliseAlbumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E1E2A61BBDE6570094C669 /* EliseAlbumsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EliseAlbumsTests.m; sourceTree = "<group>"; };
@@ -128,7 +141,6 @@
 				D2E1E28D1BBDE6570094C669 /* AppDelegate.m */,
 				D2E1E2921BBDE6570094C669 /* Main.storyboard */,
 				D2E1E2981BBDE6570094C669 /* Assets.xcassets */,
-				D2E1E29A1BBDE6570094C669 /* LaunchScreen.storyboard */,
 				D2E1E29D1BBDE6570094C669 /* Info.plist */,
 				D2E1E2951BBDE6570094C669 /* EliseAlbums.xcdatamodeld */,
 				D2E1E2891BBDE6570094C669 /* Supporting Files */,
@@ -148,6 +160,13 @@
 				D2B5D4DB1BCC2AC000E15CE9 /* Genre.m */,
 				D2B5D4DD1BCC2F2E00E15CE9 /* GenreDetailViewController.h */,
 				D2B5D4DE1BCC2F2E00E15CE9 /* GenreDetailViewController.m */,
+				D22157841BCC7A9300B22740 /* LaunchScreen.xib */,
+				D22157881BCC84AE00B22740 /* Artist.h */,
+				D22157891BCC84AE00B22740 /* Artist.m */,
+				D221578B1BCC84C200B22740 /* ArtistViewController.h */,
+				D221578C1BCC84C200B22740 /* ArtistViewController.m */,
+				D221578E1BCC852E00B22740 /* ArtistDetailViewController.h */,
+				D221578F1BCC852E00B22740 /* ArtistDetailViewController.m */,
 			);
 			path = EliseAlbums;
 			sourceTree = "<group>";
@@ -155,6 +174,8 @@
 		D2E1E2891BBDE6570094C669 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D22157911BCC889400B22740 /* mozart.jpg */,
+				D22157861BCC7C6400B22740 /* music-5.jpg */,
 				D2E1E28A1BBDE6570094C669 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -281,8 +302,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E1E29C1BBDE6570094C669 /* LaunchScreen.storyboard in Resources */,
+				D22157851BCC7A9300B22740 /* LaunchScreen.xib in Resources */,
+				D22157921BCC889400B22740 /* mozart.jpg in Resources */,
 				D2E1E2991BBDE6570094C669 /* Assets.xcassets in Resources */,
+				D22157871BCC7C6400B22740 /* music-5.jpg in Resources */,
 				D2E1E2941BBDE6570094C669 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,13 +335,16 @@
 				D2B5D4D61BCC251F00E15CE9 /* GenresTableViewController.m in Sources */,
 				D2E1E2C41BBDE72E0094C669 /* AlbumCollectionViewCell.m in Sources */,
 				D2E1E2C71BBDE7B60094C669 /* InfoViewController.m in Sources */,
+				D22157901BCC852E00B22740 /* ArtistDetailViewController.m in Sources */,
 				D2E1E28E1BBDE6570094C669 /* AppDelegate.m in Sources */,
 				D2E1E2971BBDE6570094C669 /* EliseAlbums.xcdatamodeld in Sources */,
 				D2B5D4D91BCC27E500E15CE9 /* GenresTableViewCell.m in Sources */,
 				D2B5D4DC1BCC2AC000E15CE9 /* Genre.m in Sources */,
 				D2B5D4DF1BCC2F2E00E15CE9 /* GenreDetailViewController.m in Sources */,
 				D2E1E2CC1BBDEF260094C669 /* Album.m in Sources */,
+				D221578A1BCC84AE00B22740 /* Artist.m in Sources */,
 				D2E1E28B1BBDE6570094C669 /* main.m in Sources */,
+				D221578D1BCC84C200B22740 /* ArtistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,14 +386,6 @@
 				D2E1E2931BBDE6570094C669 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D2E1E29A1BBDE6570094C669 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2E1E29B1BBDE6570094C669 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
