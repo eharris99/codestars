@@ -1,0 +1,1 @@
+medium blog post on tk is here 

@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2038B181BB6521900969FB0 /* QuestionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2038B171BB6521900969FB0 /* QuestionTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		D219F56E1BB5EF8D00C43CDB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D219F56D1BB5EF8D00C43CDB /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D2038B181BB6521900969FB0 /* QuestionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2038B171BB6521900969FB0 /* QuestionTableViewCell.m */; };
+		D219F56E1BB5EF8D00C43CDB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D219F56D1BB5EF8D00C43CDB /* DetailViewController.m */; };
 		D22291301BADE06600656293 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = D222912F1BADE06600656293 /* about.html */; };
 		D22291331BADE0D100656293 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22291321BADE0D100656293 /* AboutViewController.m */; };
 		D22291361BADF13000656293 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = D22291351BADF13000656293 /* Question.m */; };
 		D243BAAA1BADB1F00036DFF9 /* PhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D243BAA91BADB1F00036DFF9 /* PhotosCollectionViewController.m */; };
 		D243BAAD1BADB3E50036DFF9 /* FamilyPhotosCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D243BAAC1BADB3E50036DFF9 /* FamilyPhotosCollectionViewCell.m */; };
-		D29A73621BB84D4E001C28F2 /* SearchKardashiansTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73611BB84D4E001C28F2 /* SearchKardashiansTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D29A73651BB85EAD001C28F2 /* SearchKardashiansTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73641BB85EAD001C28F2 /* SearchKardashiansTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		D29A73681BB869BA001C28F2 /* SKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73671BB869BA001C28F2 /* SKDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D29A736B1BB87349001C28F2 /* Kardashian.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A736A1BB87349001C28F2 /* Kardashian.m */; settings = {ASSET_TAGS = (); }; };
-		D29A736E1BB898A3001C28F2 /* QuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A736D1BB898A3001C28F2 /* QuestionDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D29A73711BB89E38001C28F2 /* EditQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73701BB89E38001C28F2 /* EditQuestionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D29F3A801BB6125500A2B96E /* AddQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F3A7F1BB6125500A2B96E /* AddQuestionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D29F3A811BB61FCF00A2B96E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EAB7D31BAE02A0000AE9AD /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		D2D6E67A1BB7AC9B004D71D2 /* KardashiansCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6E6791BB7AC9B004D71D2 /* KardashiansCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D2D6E67D1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6E67C1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		D29A73621BB84D4E001C28F2 /* SearchKardashiansTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73611BB84D4E001C28F2 /* SearchKardashiansTableViewController.m */; };
+		D29A73651BB85EAD001C28F2 /* SearchKardashiansTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73641BB85EAD001C28F2 /* SearchKardashiansTableViewCell.m */; };
+		D29A73681BB869BA001C28F2 /* SKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73671BB869BA001C28F2 /* SKDetailViewController.m */; };
+		D29A736B1BB87349001C28F2 /* Kardashian.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A736A1BB87349001C28F2 /* Kardashian.m */; };
+		D29A736E1BB898A3001C28F2 /* QuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A736D1BB898A3001C28F2 /* QuestionDetailViewController.m */; };
+		D29A73711BB89E38001C28F2 /* EditQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A73701BB89E38001C28F2 /* EditQuestionViewController.m */; };
+		D29F3A801BB6125500A2B96E /* AddQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F3A7F1BB6125500A2B96E /* AddQuestionViewController.m */; };
+		D29F3A811BB61FCF00A2B96E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EAB7D31BAE02A0000AE9AD /* Main.storyboard */; };
+		D2D6E67A1BB7AC9B004D71D2 /* KardashiansCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6E6791BB7AC9B004D71D2 /* KardashiansCollectionViewController.m */; };
+		D2D6E67D1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6E67C1BB7ACB3004D71D2 /* KardashiansCollectionViewCell.m */; };
 		D2EAB7D21BADFC5A000AE9AD /* alzheimers-large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2EAB7D11BADFC5A000AE9AD /* alzheimers-large.jpg */; };
 		D2F405391BACDF1E00DE4181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F405381BACDF1E00DE4181 /* main.m */; };
 		D2F4053C1BACDF1E00DE4181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F4053B1BACDF1E00DE4181 /* AppDelegate.m */; };
@@ -390,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -427,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
